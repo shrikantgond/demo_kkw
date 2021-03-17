@@ -1,11 +1,4 @@
 {
-  "Test": {
-    "id": "number",
-    "name": "string",
-    "normalrange": "number",
-    "result": "number",
-    "unit": "string"
-  },
   "Lab": {
     "id": "string",
     "patientid": "string",
@@ -20,6 +13,13 @@
     "tests": "Test[]",
     "reportfile": "string"
   },
+    "Test": {
+    "id": "number",
+    "name": "string",
+    "normalrange": "number",
+    "result": "number",
+    "unit": "string"
+  },
   "Patient": {
     "id": "string",
     "name": "string",
@@ -30,14 +30,6 @@
     "emergencycontact": "string",
     "allergies": "string",
     "existingillness": "string"
-  },
-  "Medication": {
-    "name": "string",
-    "perdosequantity": "number",
-    "doseunit": "string",
-    "dosefrequency": "number",
-    "dosefrequencyunit": "string",
-    "maxdailyintake": "string"
   },
   "Prescription": {
     "id": "string",
@@ -50,6 +42,14 @@
     "ondate": "date",
     "givenbydrid": "string",
     "givenbydr": "string"
+  },
+    "Medication": {
+    "name": "string",
+    "perdosequantity": "number",
+    "doseunit": "string",
+    "dosefrequency": "number",
+    "dosefrequencyunit": "string",
+    "maxdailyintake": "string"
   },
   "Appointment": {
     "id": "string",
