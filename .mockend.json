@@ -1,13 +1,67 @@
 {
-  "Post": {
-    "title": "string",
-    "views": "int",
-    "published": "boolean",
-    "createdAt": "date",
-    "comments": "Comment[]"
+  "Test": {
+    "id": "number",
+    "name": "string",
+    "normalrange": "number",
+    "result": "number",
+    "unit": "string"
   },
-  "Comment": {
-    "body": "string",
-    "post": "Post"
+  "Lab": {
+    "id": "string",
+    "patientid": "string",
+    "patient": "string",
+    "title": "string",
+    "status": "string",
+    "iscurrent": "boolean",
+    "treatmentfor": "string",
+    "ondate": "date",
+    "givenbydrid": "string",
+    "givenbydr": "string",
+    "tests": "Test[]",
+    "reportfile": "string"
+  },
+  "Patient": {
+    "id": "string",
+    "name": "string",
+    "mobile": "string",
+    "dob": "date",
+    "gender": "string",
+    "address": "string",
+    "emergencycontact": "string",
+    "allergies": "string",
+    "existingillness": "string"
+  },
+  "Medication": {
+    "name": "string",
+    "perdosequantity": "number",
+    "doseunit": "string",
+    "dosefrequency": "number",
+    "dosefrequencyunit": "string",
+    "maxdailyintake": "string"
+  },
+  "Prescription": {
+    "id": "string",
+    "symptoms": "string",
+    "patientid": "string",
+    "patient": "string",
+    "medications": "Medication[]",
+    "treatmentfor": "string",
+    "iscurrent": "boolean",
+    "ondate": "date",
+    "givenbydrid": "string",
+    "givenbydr": "string"
+  },
+  "Appointment": {
+    "id": "string",
+    "patientid": "string",
+    "patient": "string",
+    "patientmobile": "string",
+    "drid": "string",
+    "drname": "string",
+    "drmobile": "string",
+    "ondatetime": "date",
+    "duration": "number",
+    "status": "string",
+    "paymentstatus": "string"
   }
 }
